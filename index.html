@@ -434,15 +434,19 @@
                     </a>
                 </li>
                 <li class="footer__social-item">
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    <a href="https://www.upwork.com/freelancers/~0132d1586d8e0d0578" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-upwork footer__social-icon'></i>
                     </a>
                 </li>
             </ul>
 
             <span class="footer__copy">
-                &#169; 2024 . All rights reserved.
+                &#169; <span id="currentYear"></span>. All rights reserved.
             </span>
+            
+            <script>
+                document.getElementById("currentYear").textContent = new Date().getFullYear();
+            </script>
         </div>
     </footer>
 
